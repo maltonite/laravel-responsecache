@@ -85,7 +85,7 @@ class ResponseCache
 
         $clonedResponse->headers->set(
             config('responsecache.cache_time_header_name'),
-            now()->toRfc2822String(),
+            now()->toRfc2822String()
         );
 
         return $clonedResponse;
